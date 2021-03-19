@@ -121,3 +121,61 @@ header {
     text-transform: uppercase;
     margin: 118px auto 0 auto;
 }
+
+.reason {
+    margin-top: 70px;
+}
+
+.reason .reason_btn {
+    width: 140px;
+    height: 24px;
+    display: block;
+    background-color:#000;
+    color: #ffff;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+.reason_header {
+    color: #222222;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+
+}
+
+.reason .reason_bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1EACC7;
+    float: left;
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    margin: 0;
+}
+
+.reason .col-md-6 {
+    margin-top: 40px;
+    padding-left: 45px;
+}
+
+.reason .reason_text_head{
+    color: #1EACC7;
+    padding-left: 150px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.reason .reason_text_descr{
+    padding-left: 150px;
+    font-size: 15px;
+    font-weight: 300;
+    
+}
+
+
