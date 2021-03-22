@@ -1,6 +1,10 @@
 *
 	font-family: 'Roboto', sans-serif
 
+=btn_hover
+	&:hover
+		background-image: none
+		background-color: #1EACC7
 
 nav
 	height: 53px
@@ -65,6 +69,7 @@ li:last-child
 	font-size: 14px
 	text-shadow: 1px 1px rgba(0, 0, 0, 0.2)
 	text-transform: uppercase
+	+btn_hover
 
 .f_disp
 	background: url('/img/first_disp/uber_bg.png') center (center / cover) no-repeat
@@ -103,9 +108,19 @@ p
 	text-shadow: 1px 1px rgba(0, 0, 0, 0.2)
 	text-transform: uppercase
 	margin: 118px auto 0 auto
+	+btn_hover
 
 .reason
 	margin-top: 70px
+	padding-bottom: 50px
+	&_text_head
+		color: #1EACC7
+		padding-left: 150px
+		font-size: 17px
+		font-weight: 400
+	&_text_descr
+		padding-left: 150px
+		font-size: 15px
 
 @mixin lables
 	margin: 0 auto
@@ -117,8 +132,20 @@ p
 	font-size: 11px
 	font-weight: 300
 	text-transform: uppercase
+	
+.label
+	margin: 0 auto
+	padding-top: 30px
+	height: 24px
+	width: 112px
+	padding: 5px 12px
+	background-color: #000000
+	color: #ffffff
+	font-size: 11px
+	font-weight: 300
+	text-transform: uppercase
 
-@mixin tittles
+.title
 	margin-bottom: 0 
 	margin-top: 38px
 	color: #222222
@@ -126,12 +153,11 @@ p
 	font-weight: 700
 	text-transform: uppercase
 	text-align: center
-	
-.label
-	@include lables
 
-.title
-	@include tittles
+.subtitle 
+	color: #222222
+	font-size: 17px
+	text-align: center	
 
 .reason_bg
 	display: flex
@@ -148,13 +174,92 @@ p
 	margin-top: 40px
 	padding-left: 45px
 
-.reason_text_head
-	color: #1EACC7
-	padding-left: 150px
-	font-size: 17px
-	font-weight: 400
 
-.reason_text_descr
-	padding-left: 150px
-	font-size: 15px
 	font-weight: 300
+
+.mobile 
+	background: url('/img/reason/mobile_bg.png') center center/cover no-repeat
+	min-height: 864px
+	padding: 48px 0 79px 0
+	.row
+		margin-top: 32px
+	&_item
+		position: relative
+		width: 320px
+		height: 280px
+		margin: auto
+		margin-bottom: 19px
+		&_subtitle
+			font-size: 24px
+			text-align: center
+			text-transform: uppercase
+			padding-top: 82px
+			color: #FFFFFF
+		&_plus
+			display: flex
+			justify-content: center
+			align-content: center
+			position: absolute
+			bottom: 35px
+			left: 50%
+			transform: translateX(-50%)
+			background-color: #000000
+			border-radius: 100%
+			width: 29px
+			height: 29px
+			padding:  6px
+			cursor: pointer
+
+		&_1
+			background: url('/img/reason/cart_1.png') center center/cover no-repeat
+		&_2
+			background: url('/img/reason/cart_2.png') center center/cover no-repeat		
+		&_3
+			background: url('/img/reason/cart_3.png') center center/cover no-repeat
+		&_4
+			background: url('/img/reason/cart_4.png') center center/cover no-repeat
+		&_5
+			background: url('/img/reason/cart_5.png') center center/cover no-repeat
+		&_6
+			background: url('/img/reason/cart_7.png') center center/cover no-repeat
+.choice
+	position: relative
+	&_black
+		padding-top: 60px
+		height: 499px
+		background: #070716
+		margin-bottom: 250px
+	&_label_white
+		margin: 0 auto
+		padding-top: 57px
+		height: 24px
+		width: 112px
+		padding: 5px 12px
+		background-color: #ffffff
+		color: #000000
+		font-size: 11px
+		font-weight: 300
+		text-transform: uppercase
+
+	&_subtitle_white
+		color: #FFFFFF
+		font-size: 17px
+		text-align: center
+
+	&_title_white
+		color: #FFFFFF
+		font-size: 38px
+		margin-top: 30px
+		font-weight: 600
+		text-align: center
+		text-transform: uppercase
+	p
+		color: #000000
+		text-align: center
+		margin-bottom: 160px
+
+	img
+		position: absolute
+		top: 232px
+		padding-left: 270px
+		

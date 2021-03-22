@@ -179,4 +179,9 @@ header {
     
 }
 
+.mobile {
+    background: url('/img/first_disp/uber_bg.png') center center/cover no-repeat;
+    height: 799px;
+}
+
 
