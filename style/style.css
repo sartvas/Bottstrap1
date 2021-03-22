@@ -126,25 +126,26 @@ header {
     margin-top: 70px;
 }
 
-.reason .reason_btn {
-    width: 140px;
+.label {
+    margin: 0 auto;
     height: 24px;
-    display: block;
-    background-color:#000;
-    color: #ffff;
+    width: 112px;
+    padding: 5px 12px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 300;
     text-transform: uppercase;
-    margin: auto;
 }
 
-.reason_header {
+.title {
+    margin-bottom: 0
+    margin-top 38px;
     color: #222222;
-    font-weight: 600;
     font-size: 38px;
-    line-height: 48px;
-    text-align: center;
+    font-weight: 700;
     text-transform: uppercase;
-    margin: 0;
-
+    text-align: center;
 }
 
 .reason .reason_bg {
